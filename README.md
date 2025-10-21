@@ -3,7 +3,7 @@
 
 Refactored but unfinished version of my project designed to maximize efficiency, speed, and flexibility when downloading hundreds of terabytes of raw data from public data sources like CommonCrawl.org. This project finds all cores on dual-socket servers, assign's each core to their respective memory channel (To avoid Cross-NUMA conflicts), and downloads/cleans/stores raw data.  
 
-Primary feature:
+Primary feature:  
     - NUMA-aware  
     - Efficiency and speed when dealing with hundreds of terabytes of data  
     - Each core acts as it's own worker, meaning they all report back to main.py, which triggers it to respond accordingly depending on the signal (finished cleaning a file, error cleaning a file, position assignment, etc.)  
